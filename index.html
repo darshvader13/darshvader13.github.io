@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Darsh </title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/LetterD.svg/1200px-LetterD.svg.png" type="image/png">
+  <head>
+	<link rel="stylesheet" href="public/css/style.css">
+  </head>
+  
+	<div id="try">
+		<nav class="topnav" id="myTopnav">
+		<a href="#about">About Me</a>
+		<a href="#projects">Projects</a>
+		<a href="#chat">Chat App</a>
+		<a href="#quote">Quote of the Day</a>
+		<a href="#contact">Contact Info</a>
+		</nav>
+	</div>
+  
+	<div id="about">
+    <img id="aboutPic" src="public/files/darsh.jpg"/> 
+    <div class="about-content">
+    <div class="left-about">
+        <h3 class="about-me-text">About Me</h3>
+        <div class="description-content">
+            <div class="description">
+                <p>
+                    Hi, I am Darsh Balani, a 2nd year majoring in Computer Science at the University of California-Berkeley. My academic interests lie in Software Engineering, Full Stack & Back End Development, Data Science, and Machine Learning. I have spent time working as a Data Science intern this summer at John Deere Financial, where I developed a forecast model to predict equipment inventory price and count. I have also worked as an IT intern for John Deere, where my team and I created an Android app to help farmers with field scouting. I am currently a research assistant at Berkeley working on a project about refugees in Jordan. In my free time, I like playing and watching football, lifting, and watching a variety of <a href="shows.html">shows</a>. 
+                </p>
+            </div>
+            <div class="about-links">
+                <a href="https://www.linkedin.com/in/darsh-balani/" target="_blank">
+                    <img class=icon src="public/files/linkedin.png" title="Linkedin Icon" alt="Linkedin Link">
+                </a>
+				<a href="https://drive.google.com/file/d/13iVdqwqEh1o6zFC5DEJ1CXm-CfWf1D9L/view?usp=sharing" target="_blank">
+                    <img class=icon src="public/files/resume.png" title="Resume Icon" alt="Resume Link">
+                </a>
+            </div>
+        </div>
+    </div>
+	</div>
+	</div>
+	
+	<div id="projects">
+    <h1 class ="techHeading">Projects</h1>
+
+    <div class="BoxP">
+        <h2>Field View App </h2>
+        <div class="DetailsP">
+            <div class="ImageP">
+                <img class="ImageP" src="public/files/field.PNG" alt="Image of Field View">
+            </div>
+            <div class="WrittenP">
+                <p class="DescriptionP">
+                    
+					I created this app with my team during my time as an IT intern at John Deere to assist farmers with the act of field scouting. The Java application allows users to drap and drop pins of data onto an image of the user's field. The app lets users input a picture of their own field or use Google Maps to view the area. In these information pins, users can store problem type, severity, text, and pictures. Data gets stored into a database every time there is an update to the app and is fetched everytime there is a login. 
+					
+                </p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="BoxP">
+        <h2>Gitlet</h2>
+        <div class="DetailsP">
+            <div class="ImageP">
+                <img class= ImageP src="public/files/gitlet.png" alt="Image of Gitlet">
+            </div>
+            <div class="WrittenP">
+                <p class="DescriptionP">
+                    This project required the use of many data structures in Java in order to create a version control system that mimics some of the basic features of the popular system Git. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="BoxP">
+        <h2>Scheme Interpreter</h2>
+        <div class="DetailsP">
+            <div class="ImageP">
+                <img class= ImageP src="public/files/scheme.png" alt="Image of Project Scheme">
+            </div>
+            <div class="WrittenP">
+                <p class="DescriptionP">
+                    
+					This project was an interpreter made in Python for Scheme, which is a Lisp dialect programming language, which required real-time, interactive user input.
+                </p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="BoxP">
+        <h2>Build Your Own Game</h2>
+        <div class="DetailsP">
+            <div class="ImageP">
+                <img class= ImageP src="public/files/world.png" alt="Image of World Generation">
+            </div>
+            <div class="WrittenP">
+                <p class="DescriptionP">
+                     
+					A partner and I worked on this Java project in which we built a 2D seed-based world generator, which included a graphical interference and interactive movement features.
+                </p>
+            </div>
+        </div>
+    </div>
+	
+	</div>
+	
+	<div id="chat">
+	<h1 class='techHeading'>Chat App</h1>
+	<div class='Box'> 
+	<body>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="public/css/style.css" />
+		<div id=box class="join-container">
+			<main class="join-main">
+				<form action="public/chat.html">
+					<div class="form-control">
+						<label for="username">Username:</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class = "form-group">
+                	<label for="color">Chat Color:</label>
+					<input type="color" id="color" name="color" value="#ff0000" class = "form-control">
+				</div>
+          <div class="flex">
+            <button type="submit" class="btn">Enter to Chat</button>
+          </div>
+			</form>
+			</main>
+		</div>
+	</body>
+	</div>
+	</div>
+	
+	<div id="quote">
+	<h1 class ="techHeading">Quote of the Day</h1>
+	<div class='BoxQ'>
+	<h3 id='sanskar'>Quote</h3>
+	<h2 id='rishabh'>Author</h2>
+	</div>
+	</div>
+	
+	<div id="contact">
+	<div class='BoxC'>
+	<h1 class ="techHeading">Contact Me</h1>
+	<h4>Email: <a href="mailto:dbalani2002@gmail.com">dbalani2002@gmail.com</a></h4>
+	</div>
+	</div>
+	
+<script src="public/js/quote.js"></script>
+</html>
