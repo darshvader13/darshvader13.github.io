@@ -1,7 +1,6 @@
 const path = require('path');
-const http = require('http');
 const express = require('express');
-const socketio = require('socket.io');
+const http = require('http');
 const formatMessage = require('./helpers/formatDate')
 const {
   getActiveUser,
@@ -11,8 +10,8 @@ const {
 } = require('./helpers/userHelper');
 
 const app = express();
-const server = app.listen(3000);
-const io = socketio.listen(server);
+const server = http.createServer(app);
+const io = require('socket.io').listen(server);
 
 // Set public directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -67,6 +66,5 @@ io.on('connection', socket => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = 3000;
+server.listen(PORT);
