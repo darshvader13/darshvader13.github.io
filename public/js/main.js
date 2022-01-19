@@ -8,7 +8,6 @@ const { username, color } = Qs.parse(location.search, {
 });
 
 let room = 'room';
-console.log(username)
 const socket = io();
 
 // Join chatroom
