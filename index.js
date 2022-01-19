@@ -11,9 +11,8 @@ const {
 } = require('./helpers/userHelper');
 
 const app = express();
-const server = http.createServer(app);
+const server = app.listen(3000);
 const io = socketio.listen(server);
-server.listen(3000);
 
 // Set public directory
 app.use(express.static(path.join(__dirname, 'public')));
