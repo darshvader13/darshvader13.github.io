@@ -11,7 +11,8 @@ const {
 
 const app = express();
 const server = http.createServer(app);
-const io = require('socket.io').listen(server);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
 // Set public directory
 app.use(express.static(path.join(__dirname, 'public')));
